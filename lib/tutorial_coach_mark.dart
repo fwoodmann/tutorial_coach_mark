@@ -12,12 +12,12 @@ export 'package:tutorial_coach_mark/src/target/target_content.dart';
 export 'package:tutorial_coach_mark/src/target/target_focus.dart';
 export 'package:tutorial_coach_mark/src/target/target_position.dart';
 export 'package:tutorial_coach_mark/src/util.dart';
+export 'package:tutorial_coach_mark/src/widgets/tutorial_coach_mark_widget.dart';
 
 class TutorialCoachMark {
   final List<TargetFocus> targets;
   final FutureOr<void> Function(TargetFocus)? onClickTarget;
-  final FutureOr<void> Function(TargetFocus, TapDownDetails)?
-      onClickTargetWithTapPosition;
+  final FutureOr<void> Function(TargetFocus, TapDownDetails)? onClickTargetWithTapPosition;
   final FutureOr<void> Function(TargetFocus)? onClickOverlay;
   final Function()? onFinish;
   final double paddingFocus;
